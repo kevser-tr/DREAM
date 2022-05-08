@@ -94,12 +94,12 @@ ul {
 }
 
 .banner {
-    width: 80px;
+    width: 10%;
 
 }
 
 li {
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 0 10px;
     font-family: 'Raleway', sans-serif;
     transition: transform 0.5s;
@@ -131,10 +131,13 @@ ul {
 
 /*____________________________________________________________________________________________________________*/
 #Galtekst {
-    display: flex;
-    width: 80%;
+
+    width: 100%;
     margin: auto;
-    padding: 50px 0px;
+    position: absolute;
+    bottom:0px;
+    padding: 15px ;
+    background-color: rgba(245, 245, 220, 0.411);
 }
 
 .Galpic {
@@ -142,8 +145,10 @@ ul {
     width: 50%
 }
 
-.tekst {
+P, .tekst {
     text-align: left;
+    width: 100%;
+    color: #FFFFFF;
     line-height: normal;
 }
 
@@ -152,10 +157,6 @@ h1,
     padding-bottom: 10px;
 }
 
-p,
-.tekst {
-    padding-right: 15px;
-}
 
 /*_____________________________________________________________________________________________________________*/
 /*GALLERY*/
@@ -182,18 +183,26 @@ p,
 
 article {
     text-align: center;
-    padding-top: 50px;
     z-index: 0;
-    width: 30%;
+    width: 100%;
+}
+ .width{
+    text-align: center;
+    z-index: 0;
+    width: 80%;
     margin: auto;
 }
-
 h1 {
-    font-size: 2.5em;
-
+    font-size: 1.5em;
     font-weight: 500;
 }
-
+#BANNERTEXT{
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1;
+    text-align: left;
+}
 .pic {
     display: block;
     margin-left: auto;
@@ -209,13 +218,26 @@ h1 {
 .parrallaxPic {
     background-image: url('img/pexels-pixabay-262048.jpg');
     height: 75vh;
+    padding: 10PX 0;
+    margin-top: 100px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    
 }
-
+.bannerIMG{
+    margin-top: 30px;
+    background-image: url('img/beelden/banner2.jpg');
+    height: 60vh;
+    width: 80%;
+    margin: auto;
+    z-index: -1;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 #parallax {
     background-color: white;
     font-size: 36px;
@@ -226,20 +248,18 @@ h1 {
 
 /*__________________________________________________________________________________________________________________
 */
-#beds {
-    display: flex;
-    flex-wrap: wrap;
-    display: flex;
-    flex-wrap: wrap;
 
-    padding-bottom: 300px;
+
+#beds {
+    margin: auto;
+    display: flex;
+    padding-top: 100PX;
+    padding-bottom: 210px;
     justify-content: center;
 }
-
-h1,
-.bedsTekst {
+#h1Text{
     font-family: 'Raleway';
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 500;
 }
 
@@ -247,8 +267,9 @@ p,
 .bedsTekst {
     font-family: 'Raleway';
     font-weight: 300;
-    font-size: 1em;
+    font-size: 1.5em;
     line-height: 1;
+
     text-align: left;
 }
 
@@ -257,7 +278,7 @@ p,
 }
 
 .pics img {
-    width: 100%;
+    width: 40%;
     position: absolute;
 }
 
@@ -327,8 +348,3 @@ footer {
     color: white;
 }
 
-iframe {
-    width: 50%;
-    margin: auto;
-    padding: 30px;
-}
